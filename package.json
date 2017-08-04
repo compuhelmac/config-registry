@@ -1,0 +1,48 @@
+{
+  "name": "config-registry",
+  "version": "0.0.0",
+  "description": "Handle environment configs on mongo database to be shared across multiple microservices",
+  "homepage": "https://github.com/compuhelmac/config-registry",
+  "author": {
+    "name": "Helmac.ca",
+    "email": "rodriguez.luis@helmac.ca",
+    "url": "https://github.com/compuhelmac/"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "config registry mongo environments microservices"
+  ],
+  "devDependencies": {
+    "eslint": "^4.1.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^20.0.0",
+    "nock": "^9.0.14",
+    "nsp": "^2.6.3"
+  },
+  "scripts": {
+    "prepublish": "nsp check",
+    "pretest": "eslint . --fix",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "repository": "compuhelmac/config-registry",
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.30"
+  }
+}

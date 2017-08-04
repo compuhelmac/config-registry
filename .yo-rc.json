@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Helmac.ca",
+      "authorEmail": "rodriguez.luis@helmac.ca",
+      "authorUrl": "https://github.com/compuhelmac/"
+    }
+  }
+}
