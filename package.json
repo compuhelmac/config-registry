@@ -1,6 +1,6 @@
 {
   "name": "config-registry",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Handle environment configs on mongo database to be shared across multiple microservices",
   "homepage": "https://github.com/compuhelmac/config-registry",
   "author": {

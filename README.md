@@ -10,9 +10,26 @@ $ npm install --save config-registry
 ## Usage
 
 ```js
-const configRegistry = require('config-registry');
+const ConfigRegistry = require('config-registry');
 
-configRegistry('Rainbow');
+var configRegistry = new ConfigRegistry({
+  env: 'dev',
+  collection: '<registyCollectionName>',
+  name: '<configName>',
+  db: {
+    url: '<mongoCnxString>'
+  }
+});
+
+configRegistry
+  .getConfig()
+  .then((config) => {
+    // use config object config.<key>
+  })
+  .catch((error) => {
+    // handle error
+  });
+
 ```
 ## License
 
